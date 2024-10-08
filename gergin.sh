@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo su
+
+cd
+
 
 if [ "$EUID" -ne 0 ]; then
   echo "Bu scripti root olarak çalıştırmalısınız."

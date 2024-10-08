@@ -25,9 +25,9 @@ add-apt-repository ppa:deadsnakes/ppa -y
 apt install python3.11 python3.11-venv -y
 
 
-wget https://raw.githubusercontent.com/depeferr/sshsh/refs/heads/main/tif_install_1.0.sh
+wget https://raw.githubusercontent.com/depeferr/sshsh/refs/heads/main/tif_install_1.1.sh
 
 
-chmod +x tif_install_1.0.sh
+chmod +x tif_install_1.1.sh
 
 echo "Tüm işlemler başarıyla tamamlandı."

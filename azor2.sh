@@ -1,0 +1,35 @@
+#!/bin/bash
+
+
+cd
+
+
+if [ "$EUID" -ne 0 ]; then
+  echo "Bu scripti root olarak çalıştırmalısınız."
+  exit
+fi
+
+
+cd
+
+
+apt update
+
+
+apt install screen -y
+
+
+add-apt-repository ppa:deadsnakes/ppa -y
+
+
+apt install python3.11 python3.11-venv -y
+
+
+wget https://raw.githubusercontent.com/depeferr/sshsh/refs/heads/main/tif_install_1.1.sh
+
+
+chmod +x tif_install_1.1.sh
+
+wget https://raw.githubusercontent.com/depeferr/sshsh/refs/heads/main/slaveV1.1.sh
+
+echo "Tüm işlemler başarıyla tamamlandı."
